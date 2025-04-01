@@ -6,28 +6,27 @@ using namespace std;
 // Array = 메모리에 여러개 선언하게 하는거
 int main()
 {
-    //int Map[10] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
-    int Map[10][10] =
-    {
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
-        {1, 1, 1, 1, 1, 1, 1, 1, 1, 1}
-    };
+   
+    float color = 0;
+    float color = 0;
+    int Apple = 0;
+    int Goblin = 0;
+    char Alphabet = 'A';
+    bool condition = true; //언리얼에서는 bool안쓰고 다른거 쓴다고 함.
+    bool IsFinish = false;
+    bool IsRunning = true;
 
-    for (int y = 0; y < 10; ++y)
+
+    //특정 키를 누르면 종료
+    char Key = 0;
+    for (; IsRunning;)
     {
-        for (int x = 0; x < 10; ++x)
+        cin >> Key;
+        if (Key == 'Q')
         {
-            cout << Map[y][x];
+            IsRunning = false;
         }
-        cout << endl;
+        cout << "반가워" << endl;
     }
     return 0;
 }
